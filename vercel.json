@@ -1,15 +1,9 @@
 {
-  "version": 2,
-  "builds": [
+  "redirects": [
     {
-      "src": "app.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "app.py"
+      "source": "/:path*",
+      "destination": "https://snapclass-actual.streamlit.app/",
+      "permanent": false
     }
   ]
 }
